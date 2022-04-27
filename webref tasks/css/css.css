@@ -1,0 +1,82 @@
+.tbl {
+    margin: auto;
+    border-spacing: 0;
+    width: 80%;
+}
+.head {border: none;
+    text-align: center;
+    font-family: Arial,sans-serif;
+    font-width:400;
+}
+.center {
+    text-align: center;
+}
+td {
+    border: 1px solid black; }
+
+/*-----------------------------------------------------*/
+.outline {
+    width: 500px;
+    padding: 20px;
+    border: none;
+    background-color: blueviolet;
+    outline: 2px solid white;
+    outline-offset: -4px;
+    color: white;}
+
+
+/*.outline {*/
+/*    width: 500px;*/
+/*    color: white;*/
+/*    border: 2px solid blueviolet;*/
+/*    background-color: blueviolet;*/
+/*}*/
+/*div p{*/
+/*    border: 6px solid white;*/
+/*    margin: 2px;*/
+/*    padding: 20px;*/
+/*}*/
+
+/*p {*/
+/*    background: #86328C; !* Цвет фона *!*/
+/*    color: #fff; !* Цвет текста *!*/
+/*    padding: 1em; !* Поля вокруг текста *!*/
+/*    border: 6px double #fff; !* Параметры рамки *!*/
+/*}*/
+
+/*---------------------------------*/
+
+/*table {margin: auto;*/
+/*    width: 80%;*/
+/*}*/
+/*tr {*/
+/*    border-collapse: collapse;*/
+/*    border-spacing: 3px;*/
+/*    background-color: darkseagreen;*/
+/*}*/
+/*th {text-align: center;*/
+/*    padding: 7px;}*/
+/*td {padding: 20px}*/
+
+/*-------------------------------------------------*/
+.world {
+    max-width: 500px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    border: 2px solid white;
+    background-color: chocolate;
+    padding: 20px;
+}
+li:first-child {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+a {color: white;
+text-decoration: none; }
+
+li:last-child {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;}
