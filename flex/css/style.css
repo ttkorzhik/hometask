@@ -25,15 +25,22 @@
     line-height: 42px;
     color: #000000;
     text-align: center;
-    padding: 54px 0;
+    padding: 54px 0 0;
     text-transform: uppercase;
 }
-.line {
+.title:after {
+    content: "";
     width: 170px;
-    background-color: #EC7979;
-    height: 1px;
-    margin: 0 auto 40px auto;
+    display: block;
+    border-bottom: 1px solid #EC7979;
+    margin: 53px auto 0 auto;
 }
+/*.line {*/
+/*    width: 170px;*/
+/*    background-color: #EC7979;*/
+/*    height: 1px;*/
+/*    margin: 0 auto 40px auto;*/
+/*}*/
 .subtitle {
     font-family: 'Raleway';
     font-style: normal;
@@ -42,7 +49,7 @@
     line-height: 21px;
     color: #86878B;
     text-align: center;
-
+    margin-top: 40px;
 }
 .cards {
     display: flex;
@@ -238,4 +245,91 @@
     margin-top: -20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     align-self: flex-start;
+}
+
+.customers {
+    padding: 50px 0 64px;
+}
+
+.comment {
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+}
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 370px;
+}
+.content__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    text-align: center;
+    background: #E2E2E2;
+    border-radius: 10px;
+    padding: 38px 20px 37px;
+    margin-bottom: 66px;
+    position: relative;
+}
+.content__person {
+    display: flex;
+}
+.content__person__foto {
+    margin-right: 30px;
+    align-self: flex-start;
+    position: relative;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.content__person__foto--first {
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 70px;
+    height: 70px;
+}
+
+.content__person__info {
+    display: flex;
+    flex-direction: column;
+}
+.person__info__name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #000000;
+    padding: 11px 0 10px;
+    width: 269px;
+}
+.person__info__prof {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 15px;
+}
+
+.content__text::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 23px solid transparent;
+    border-right: 23px solid transparent;
+    border-top: 30px solid #E2E2E2;
+    bottom: -25px;
+    left: 62px;
 }
