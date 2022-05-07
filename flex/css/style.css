@@ -25,15 +25,20 @@
     line-height: 42px;
     color: #000000;
     text-align: center;
-    padding: 54px 0 0;
+    padding: 54px 0;
     text-transform: uppercase;
+    position: relative;
 }
 .title:after {
     content: "";
     width: 170px;
-    display: block;
-    border-bottom: 1px solid #EC7979;
-    margin: 53px auto 0 auto;
+    height: 1px;
+    bottom: 0;
+    background: #EC7979;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
 }
 /*.line {*/
 /*    width: 170px;*/
@@ -282,16 +287,12 @@
 .content__person__foto {
     margin-right: 30px;
     align-self: flex-start;
-    position: relative;
     overflow: hidden;
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 .content__person__foto--first {
-    position: absolute;
-    top:0;
-    left: 0;
     display: block;
     width: 70px;
     height: 70px;
@@ -332,4 +333,279 @@
     border-top: 30px solid #E2E2E2;
     bottom: -25px;
     left: 62px;
+}
+
+.design {
+    background: url("../assets/disign.jpg") no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+}
+.design-backg {
+    position: relative;
+    z-index: 2;
+}
+.design:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.title.title--white {
+    color: #FFFFFF;
+}
+.title.title--white:after {
+    background: #FFFFFF;
+}
+.subtitle.subtitle--white {
+    color: #FFFFFF;
+}
+.design__btn {
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    width: 370px;
+    margin: 73px auto 0;
+    padding: 15px 0 14px;
+    transition: 0.3s;
+}
+.design__btn:hover {
+    transform: scale(1.1);
+}
+
+.top {
+    background: #000000;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right-navigation {
+    display: flex;
+    justify-content: right;
+}
+.navigation__btn {
+    width: 113.8px;
+    text-align: center;
+    padding: 27px 0;
+}
+.navigation__btn a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.navigation__btn a:hover {
+    color: #EC7979;
+}
+.header-left {
+ margin-left: -5%;
+}
+
+.banner {
+    background: url("../assets/banner.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 231px 0 185px;
+}
+.banner-backg {
+    position: relative;
+    z-index: 2;
+}
+.banner:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+}
+.banner-content__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    color: #FFFFFF;
+    max-width: 670px;
+    margin: 72.88px 0 42px;
+    padding-bottom: 55.12px;
+    position: relative;
+}
+.banner-content__title:after{
+    content: '';
+    position: absolute;
+    left:0;
+    width: 170px;
+    height: 1px;
+    bottom: 0;
+    background: #FFFFFF;
+}
+.banner-content__subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    max-width: 270px;
+}
+.banner-content__btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    display: block;
+    border: 2px solid #FFFFFF;
+    margin-top: 42px;
+    max-width: 270px;
+    padding: 15px 0 14px;
+    transition: 0.3s;
+}
+.banner-content__btn:hover{
+    transform: scale(0.8);
+}
+
+.footer {
+    background: #000000;
+    padding: 39.43px 0 27px;
+    display: flex;
+    flex-direction: row;
+}
+.footer__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 569.2px;
+    align-items: center;
+}
+
+.footer__author {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 27.8px;
+}
+.footer__icons__item {
+    text-decoration: none;
+    font-size: 53.2px;
+}
+.footer__icons__item._icon-facebook {
+    transition: 0.3s;
+    color: #ccc;
+}
+.footer__icons__item._icon-facebook:hover {
+    color: #EC7979;
+    transform: scale(1.1);
+}
+.footer__icons__item._icon-twitter {
+    transition: 0.3s;
+}
+.footer__icons__item._icon-twitter:hover {
+ transform: rotate(10deg);
+}
+.footer__icons__item._icon-linkedin {
+    transition: 0.3s;
+}
+.footer__icons__item._icon-linkedin:hover {
+    transform: translate(5%, -5%);
+}
+.footer__icons__item._icon-pintrest {
+    transition: 0.3s;
+}
+.footer__icons__item._icon-pintrest:hover {
+    transform: rotate(360deg);
+}
+.footer__icons__item._icon-insta {
+    transition: 0.3s;
+}
+.footer__icons__item._icon-insta:hover {
+    transform: scale(1.3);
+}
+.footer__icons__item._icon-cat {
+    transition: 0.3s;
+}
+.footer__icons__item._icon-cat:hover {
+    transform: scale(0.8);
+}
+.footer__icons__item._icon-wifi {
+    transition: 0.3s;
+}
+.footer__icons__item._icon-wifi:hover {
+    transform: translate(5%, -20%);
+}
+
+
+.social {
+    background: #F8EFEF;
+}
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-container__content {
+    max-width: 470px;
+}
+.social-container__content__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #333333;
+    padding: 14px 0 13px;
+}
+.social-container__content__text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #86878B;
+    margin: 18px 0;
+}
+.social-container__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+}
+
+.social-container__icons__item svg{
+    width: 70px;
+    height: 70px;
+    transition: 0.3s;
+}
+.social-container__icons__item svg:hover {
+    transform: scale(0.8);
 }

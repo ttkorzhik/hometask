@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.coins {
+    position: relative;
+}
+
+.wrapper {
+    background: url('../assets/backg.jpg') no-repeat;
+    background-size: cover;
+    padding: 366px 0 182px;
+}
+
+.coins-block {
+    position: relative;
+    max-width: 1067px;
+    margin: 0 auto;
+}
+
+.coins-block__bubble {
+    position: absolute;
+    top:-76px;
+    left:-55px;
+}
+.coins-block__bubble--two {
+    position: absolute;
+    bottom: -46px;
+    right: -85px;
+}
+
+.coins-block--bottom {
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+    width: 100%;
+}
+.coins-block--top {
+    position: absolute;
+    left: 0;
+    top: -6%;
+    width: 100%;
+}
+.coins-content__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 327px;
+    margin: 123.43px auto 45px;
+    position: relative;
+    padding-bottom: 28px;
+}
+.coins-content__title:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50px;
+    border: 2px solid #EC7979;
+    background: #EC7979;
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.coins-content__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 542px;
+    margin: 0 auto 20px;
+}
+.coins-balls {
+    position: relative;
+    height: 389px;
+    margin: 0 auto 67.27px;
+}
+.coins-balls__item--one {
+    position: absolute;
+    left: 0;
+    bottom: 75.2px;
+    width: 84.39px;
+}
+.coins-balls__item--two {
+    position: absolute;
+    left: 88.57px;
+    bottom: 170.45px;
+    width: 137.87px;
+}
+.coins-balls__item--three {
+    position: absolute;
+    left: 240.64px;
+    bottom: 98.6px;
+    width: 45.12px;
+}
+.coins-balls__item--four {
+    position: absolute;
+    left: 274.06px;
+    bottom: 221.42px;
+    width: 68.52px;
+}
+.coins-balls__item--five {
+    position: absolute;
+    left: 347.59px;
+    bottom: 152.91px;
+    width: 58.49px;
+}
+.coins-balls__item--six {
+    position: absolute;
+    left: 442.01px;
+    bottom: 86.06px;
+    width: 84.39px;
+}
+.coins-balls__item--seven {
+    position: absolute;
+    left: 472.92px;
+    bottom: 216.41px;
+    width: 65.17px;
+}
+.coins-balls__item--eight {
+    position: absolute;
+    right: 363.47px;
+    bottom: 155.41px;
+    width: 84.39px;
+}
+.coins-balls__item--nine {
+    position: absolute;
+    right: 276.57px;
+    bottom: 137.03px;
+    width: 45.12px;
+}
+.coins-balls__item--ten {
+    position: absolute;
+    right: 203.04px;
+    bottom: 0;
+    width: 84.39px;
+}
+.coins-balls__item--elevn {
+    position: absolute;
+    right: 214.74px;
+    top: 80.21px;
+    width: 84.39px;
+}
+.coins-balls__item--twelv {
+    position: absolute;
+    right: 100.27px;
+    bottom: 121.15px;
+    width: 84.39px;
+}
+.coins-balls__item--thirty {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 84.39px;
+}
+
+.coins-item-comment{
+    position: absolute;
+    width: 410px;
+    right: 100px;
+    top: 212px;
+    background:  #C4C4C4;
+    border-radius: 15px;
+    opacity: 0.9;
+    z-index: 2;
+    padding: 17.7px 0 17.74px 26.33px;
+}
+.item-comment__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5.81px;
+    position: relative;
+    z-index: 3;
+}
+.item-comment__subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #333333;
+    margin-top: 7.23px;
+}
+.item-comment__text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333333;
+}
+.item-comment__icon {
+    position: absolute;
+    right: 18px;
+    top: 20.68px;
+}
+.coins-item-comment:after {
+    content: '';
+    left: -28px;
+    top: 44px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 20px solid transparent;
+    border-right: 30px solid  #C4C4C4;
+    border-bottom: 20px solid transparent;
+    opacity: 0.9;
+    z-index: 4;
+}
