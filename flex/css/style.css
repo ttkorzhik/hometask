@@ -417,7 +417,9 @@
     color: #EC7979;
 }
 .header-left {
- margin-left: -5%;
+    position: relative;
+    left: -5%;
+    top: 0;
 }
 
 .banner {
