@@ -387,7 +387,7 @@
 }
 
 .top {
-    background: #000000;
+    background: #000000;;
 }
 .header {
     display: flex;
@@ -397,6 +397,7 @@
 .header-right-navigation {
     display: flex;
     justify-content: right;
+    list-style-type: none;
 }
 .navigation__btn {
     width: 113.8px;
@@ -418,7 +419,7 @@
 }
 .header-left {
     position: relative;
-    left: -5%;
+    right: 51.81px;
     top: 0;
 }
 
@@ -492,6 +493,94 @@
 .banner-content__btn:hover{
     transform: scale(0.8);
 }
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.banner-form {
+    width: 470px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.form-content {
+    padding: 0 50px 0 50px;
+}
+.banner-form__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 28px 0 29px;
+}
+.banner-form__title--color {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EC7979;
+}
+.banner-form__block {
+    list-style: none;
+    margin: 45px auto 75px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+.banner-form__block__item {
+    margin: 0 0 33px;
+}
+.banner-form__block__item p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+}
+.banner-form__block__item input{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    width: 370px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+.banner-form__block__item input:focus {
+    color: #EC7979;
+}
+
+.banner-form__btn {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #EC7979;
+    border-radius: 0px 0px 10px 10px;
+    width: 470px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    transition: 0.3s;
+}
+.banner-form__btn:hover {
+    transform: scale(0.8);
+}
+
+
 
 .footer {
     background: #000000;
