@@ -40,23 +40,21 @@
             <a href="#" class="banner-content__btn">Download</a>
         </div>
             <div class="banner-form">
-                <div class="form-content">
                 <h3 class="banner-form__title">Try Your <span class="banner-form__title--color">FREE</span> Trial Today</h3>
-                    <ul class="banner-form__block">
-                        <li class="banner-form__block__item">
-                            <p>Name</p>
-                            <input type="text"  name="user_name">
-                        </li>
-                        <li class="banner-form__block__item">
-                            <p>Email</p>
-                            <input type="email" name="user_mail">
-                        </li>
-                        <li class="banner-form__block__item">
-                            <p>Password</p>
-                            <input type="password" name="user_password">
-                        </li>
-                    </ul>
-                </div>
+                <form action="#" class="banner-form-block" name="Userdata" method="post">
+                    <div class="banner-form-block__item">
+                        <label for="username">Name</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="banner-form-block__item">
+                        <label for="useremail">Email</label>
+                        <input type="email" id="useremail">
+                    </div>
+                    <div class="banner-form-block__item">
+                        <label for="userpassword">Password</label>
+                        <input type="password" id="userpassword">
+                    </div>
+                </form>
                 <a href="#" class="banner-form__btn">Get Started</a>
             </div>
         </div>
@@ -299,6 +297,36 @@
         <h3 class="subtitle subtitle--white">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</h3>
         <a href="#" class="design__btn">Download</a>
     </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="wrapper">
+        <h2 class="title">contact us</h2>
+        <h3 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <form action="#" class="contact-form" name="userform" method="get">
+            <div class="contact-form-left">
+            <div class="contact-form__item">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div class="contact-form__item">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+            </div>
+            <div class="contact-form__item">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            </div>
+            <div class="contact-form-right">
+            <div class="contact-form__item">
+                <label for="usermessage">Message</label>
+                <textarea name="message" id="usermessage"></textarea>
+            </div>
+            </div>
+        </form>
+        <a href="#" class="contact-btn">Send Message</a>
     </div>
 </section>
 
