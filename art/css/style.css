@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1334px;
+    padding: 0 -15px;
+    margin: 0 auto;
+    background: #FBF7F6;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+.form-tabs {
+    display: flex;
+    justify-content: space-between;
+}
+.form-tabs__item {
+    width: 445px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #371030;
+    background: #F9F0EE;
+    text-decoration: none;
+    padding: 16px 0 15px;
+}
+.form-tabs__item.form-tabs__item--red {
+    background: #FFB0BA;
+    color: #9A3C48;
+    border: none;
+}
+.form-tabs__item.form-tabs__item--border {
+    border-right: 1px solid #C4C4C4;
+}
+.form-content__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content {
+    padding: 0 50px;
+    margin: 34.04px 0 48px;
+}
+.form-content__text label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #371030;
+    margin-bottom: 25px;
+}
+.form-content__text textarea {
+    width: 1234px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    opacity: 0.5;
+    background: #F9F0EE;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    height: 188px;
+}
+.form-content__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.form-content__inputs input{
+    background: #F9F0EE;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    opacity: 0.5;
+    width: 387px;
+    border: 1px solid red;
+    padding: 6px 0 5px 25px;
+}
+.form-content__btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+}
+.form-content__btn a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #9A3C48;
+    background: #FFB0BA;
+    box-shadow: 3px 3px 0px 3px #DE8E98;
+    border-radius: 100px;
+    text-decoration: none;
+    width: 250px;
+    padding: 19px 0 20px;
+    transition: 0.3s;
+}
+.form-content__btn a:hover {
+    transform:scale(0.8);
+}
+.form-content__check {
+    display: flex;
+    margin-left: 30px;
+}
+.form-content__check label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    opacity: 0.5;
+    width: 869px;
+}
+.form-content__check__checkbox {
+    align-self: center;
+    margin-right: 15px;
+}
+
+/*.form-content__check__checkbox {*/
+/*    align-self: center;*/
+/*    position: absolute;*/
+/*    z-index: -1;*/
+/*    opacity: 0;*/
+/*}*/
+/*.form-content__check__checkbox+label {*/
+/*    display: inline-flex;*/
+/*    align-items: center;*/
+/*}*/
+/*.form-content__check__checkbox+label::before {*/
+/*    content: '';*/
+/*    display: flex;*/
+/*    width: 26px;*/
+/*    height: 23px;*/
+/*    border-radius: 5px;*/
+/*    background: #F9F0EE;*/
+/*    margin-right: 15px;*/
+/*}*/
+
+/*.form-content__check__checkbox+label::before {*/
+/*    background: url("../assets/check.svg") no-repeat;*/
+/*    background-position: center;*/
+/*}*/
+
