@@ -11,57 +11,51 @@
 <body>
 <section class="basket">
     <div class="wrapper">
-    <div class="basket-data">
-        <h3 class="basket-data__title">Способ получения</h3>
-        <form action="#" class="form" name="getmethod" method="get">
+        <form action="#" class="form">
+           <h3 class="form__title form__title-first">Способ получения</h3>
             <input type="text" class="form__item form__item-city" placeholder="Город">
-            <select name="mailru" class="form__item form__item-method">
-                <optgroup label="Method">
-                    <option value="code1">Почта России</option>
-                    <option value="code2">Курьер</option>
-                    <option value="code3">Самовывоз</option>
-                </optgroup>
+            <select name="method" class="form__item form__item-method">
+                <option value="method">Почта России</option>
+                <option value="method2">Курьер</option>
+                <option value="method3">Самовывоз</option>
             </select>
-         <div class="form__item__line">
-             <input type="text" class="form__item form__item__line--street" placeholder="Улица">
-             <input type="text" class="form__item form__item__line--home" placeholder="Дом">
-             <input type="text" class="form__item form__item__line--home" placeholder="Квартира">
-             <input type="text" class="form__item form__item__line--home" placeholder="Индекс">
-        </div>
-            <textarea class="form__item form__item__messg" name="comment" rows="1" placeholder="Добавить комментарий"></textarea>
+            <div class="form-block">
+                <input type="text" class="form__item form__item-street" placeholder="Улица">
+                <input type="text" class="form__item form__item-home" placeholder="Дом">
+                <input type="text" class="form__item form__item-home" placeholder="Квартира">
+                <input type="text" class="form__item form__item-home" placeholder="Индекс">
+            </div>
+            <textarea class="form__item" name="comment" rows="1" placeholder="Добавить комментарий"></textarea>
+
+            <h3 class="form__title">Данные получателя</h3>
+            <div class="form-block">
+                <input type="text" class="form__item form__item-user" placeholder="Фамилия">
+                <input type="text" class="form__item form__item-user" placeholder="Имя">
+                <input type="text" class="form__item form__item-user" placeholder="Отчество">
+            </div>
+            <div class="form-label">
+            <input id="tel" type="tel" class="form-label__item form__item-user" placeholder="Номер телефона">
+                <label for="tel">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</label>
+            </div>
+            <div class="form-label">
+                <input id="mail" type="tel" class="form-label__item form__item-mail" placeholder="E-mail">
+                <label for="mail">На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</label>
+            </div>
+            <div class="form-checkbox">
+                <input type="checkbox" class="form__item-checkbox" value="check" id="check" checked>
+                <label for="check">Подписаться на рассылку новинок и акций</label>
+            </div>
+
+            <h3 class="form__title">Способ оплаты</h3>
+                <div class="form-radio">
+                <input id="pay-one" type="radio" name="payment" class="form-radio__item" value="01">
+                <label for="pay-one">Оплата при получении наличными или картой</label>
+                </div>
+                <div class="form-radio">
+                    <input checked id="pay-two" type="radio" name="payment" class="form-radio__item" value="01">
+                    <label for="pay-two">Оплата банковской картой онлайн</label>
+                </div>
         </form>
-        <h3 class="basket-data__title">Данные получателя</h3>
-        <form action="#" class="form" name="getmethod" method="get">
-            <div class="form__item__user">
-                <input type="text" class="form__item form__item__user--name" placeholder="Фамилия">
-                <input type="text" class="form__item form__item__user--name" placeholder="Имя">
-                <input type="text" class="form__item form__item__user--name" placeholder="Отчество">
-            </div>
-        <div class="form__item__tel">
-            <input class="form__item__tel__inp" type="tel" id="user-tel" placeholder="Номер телефона">
-            <label for="user-tel">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</label>
-        </div>
-            <div class="form__item__mail">
-                <input class="form__item__mail__inp" type="email" id="user-mail" placeholder="E-mail">
-                <label for="user-mail">На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</label>
-            </div>
-            <div class="form__item__checkbox">
-                <input type="checkbox" id="user-check" value="yes" checked>
-                <label for="user-check">Подписаться на рассылку новинок и акций</label>
-            </div>
-        </form>
-        <h3 class="basket-data__title">Способ оплаты</h3>
-        <form action="#" class="form" name="getmethod" method="get">
-            <div class="form-radio">
-                <input type="radio" value="yes" id="radio-one" name="userchoice">
-                <label for="radio-one">Оплата при получении наличными или картой</label>
-            </div>
-            <div class="form-radio">
-                <input type="radio" value="yes2" id="radio-two" name="userchoice" checked>
-                <label for="radio-two">Оплата банковской картой онлайн</label>
-            </div>
-        </form>
-    </div>
     </div>
 </section>
 </body>

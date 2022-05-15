@@ -59,13 +59,13 @@
 .cards {
     display: flex;
     justify-content: space-between;
-    margin-top: 110px;
+    padding-top: 110px;
 }
 .cards__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 370px;
+    width: 31.6239%;
 }
 .cards__item__pic {
     border: 1px solid #EC7979;
@@ -108,7 +108,6 @@
 }
 .header-list {
     display: flex;
-
 }
 
 .header-list__item {
@@ -141,7 +140,7 @@
 .block-content {
     display: flex;
     flex-direction: column;
-    width: 570px;
+    width: 100%;
     margin-right: 30px;
 }
 
@@ -188,7 +187,7 @@
     background: #F5F5F5;
 }
 .prices {
-    margin-top: 79px;
+    padding-top: 79px;
     display: flex;
     justify-content: space-between;
 }
@@ -197,6 +196,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 31.624%;
 }
 .prices-item__point {
     font-family: 'Raleway';
@@ -206,12 +206,11 @@
     line-height: 21px;
     text-transform: capitalize;
     color: #86878B;
-    width: 370px;
     text-align: center;
     padding: 15px 0 14px;
     background: #FFFFFF;
     border: 2px solid #F5F5F5;
-
+    width: 100%;
 }
 .prices-item__point.prices-item__point--top{
     font-family: 'Open Sans';
@@ -257,15 +256,16 @@
 }
 
 .comment {
-    margin-top: 83px;
+    padding-top: 83px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .comment-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 370px;
+    width: 31.623%;
 }
 .content__text {
     font-family: 'Raleway';
@@ -311,7 +311,6 @@
     text-transform: capitalize;
     color: #000000;
     padding: 11px 0 10px;
-    width: 269px;
 }
 .person__info__prof {
     font-family: 'Raleway';
@@ -320,7 +319,7 @@
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 .content__text::after {
@@ -383,7 +382,7 @@
     transition: 0.3s;
 }
 .design__btn:hover {
-    transform: scale(1.1);
+   border: 1px solid #DE8E98;
 }
 
 .top {
@@ -400,9 +399,8 @@
     list-style-type: none;
 }
 .navigation__btn {
-    width: 113.8px;
     text-align: center;
-    padding: 27px 0;
+    padding: 28px 31px 28px 30.4px;
 }
 .navigation__btn a{
     font-family: 'Open Sans';
@@ -417,6 +415,7 @@
 .navigation__btn a:hover {
     color: #EC7979;
 }
+
 .header-left {
     position: relative;
     right: 51.81px;
@@ -499,9 +498,9 @@
     align-items: flex-start;
 }
 .banner-form {
-    width: 470px;
     background: #FFFFFF;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .banner-form__title {
@@ -513,7 +512,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #333333;
-    padding: 28px 0 29px;
+    padding: 28px 50px 29px 53px;
 }
 .banner-form__title--color {
     font-family: 'Open Sans';
@@ -525,15 +524,17 @@
     text-transform: uppercase;
     color: #EC7979;
 }
-.banner-form-block {
-    padding: 0 50px;
-    margin: 45px 0 75px;
+.form-block-container {
+    padding: 45px 50px 75px;
 }
 .banner-form-block__item {
     display: flex;
     flex-direction: column;
-    margin: 0 0 33px;
     padding-bottom: 3px;
+
+}
+.banner-form-block__item:not(:last-child) {
+    margin-bottom: 30px;
 }
 .banner-form-block__item label {
     font-family: 'Open Sans';
@@ -550,7 +551,6 @@
     border-bottom: 1px solid #BDBDBD;
 }
 
-
 .banner-form__btn {
     text-decoration: none;
     font-family: 'Open Sans';
@@ -561,15 +561,19 @@
     text-align: center;
     color: #FFFFFF;
     background: #EC7979;
-    border-radius: 0px 0px 10px 10px;
+    /*border-radius: 0px 0px 10px 10px;*/
     width: 470px;
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    border: none;
     transition: 0.3s;
+    cursor: pointer;
 }
 .banner-form__btn:hover {
-    transform: scale(0.8);
+    color: #EC7979;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
 }
 
 
@@ -583,8 +587,11 @@
 .footer__icons {
     display: flex;
     justify-content: space-between;
-    width: 569.2px;
     align-items: center;
+    flex-wrap: wrap;
+}
+.footer__icons__item:not(:last-child) {
+    margin-right: 32.8px;
 }
 
 .footer__author {
@@ -595,11 +602,11 @@
     line-height: 21px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
-    margin-top: 27.8px;
+    padding-top: 27.8px;
 }
 .footer__icons__item {
     text-decoration: none;
-    font-size: 53.2px;
+    font-size: 3.325em;
 }
 .footer__icons__item._icon-facebook {
     transition: 0.3s;
@@ -675,15 +682,16 @@
     font-size: 18px;
     line-height: 21px;
     color: #86878B;
-    margin: 18px 0;
+    padding: 18px 0;
 }
 .social-container__icons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 670px;
 }
-
+.social-container__icons__item:not(:last-child) {
+    margin-right: 30px;
+}
 .social-container__icons__item svg{
     width: 70px;
     height: 70px;
@@ -693,24 +701,34 @@
     transform: scale(0.8);
 }
 
+
 .contact {
     padding: 50px 0;
 }
 
-.contact-form {
+.contact-form-block {
     display: flex;
     justify-content: space-between;
-    margin: 89px 0 0;
+    padding: 89px 0 50px;
 }
-
 .contact-form__item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    width: 571px;
     padding-bottom: 3px;
 }
 
+.contact-form-left .contact-form__item:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.contact-form-left ,
+.contact-form-right {
+    width: 49%;
+
+}
+.contact-form-right .contact-form__item {
+    height: 100%;
+}
 .contact-form__item label {
     font-family: 'Open Sans';
     font-style: normal;
@@ -721,13 +739,12 @@
 }
 .contact-form__item input {
     outline: none;
-    height: 16px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
 }
 .contact-form__item textarea {
     outline: none;
-    height: 192px;
+    height: 100%;
     border: none;
     border-bottom: 1px solid #BDBDBD;
     resize: none;
@@ -749,7 +766,11 @@
     text-decoration: none;
     padding: 16px 0 17px;
     transition: 0.3s;
+    border: none;
+    cursor: pointer;
 }
 .contact-btn:hover{
-    transform: scale(0.8);
+    background: #FFFFFF;
+    color: #EC7979;
+    border: 1px solid #BDBDBD;
 }
