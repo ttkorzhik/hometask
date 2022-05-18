@@ -119,7 +119,7 @@
     color: #333333;
     list-style: none;
     text-transform: uppercase;
-    padding: 10px 83px;
+    padding: 10px 74px;
     text-align: center;
 }
 .header-list__item--active {
@@ -177,8 +177,8 @@
     text-decoration: none;
     padding: 16px 0 17px 0;
 }
-.block-img {
-    margin: 0 0 -4.5px 0;
+.block-img img{
+    display: block;
 }
 
 
@@ -291,6 +291,9 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .content__person__foto--first {
     display: block;
@@ -339,6 +342,7 @@
     background-size: cover;
     padding: 50px 0;
     position: relative;
+    /*height: 100vh;*/
 }
 .design-backg {
     position: relative;
@@ -400,7 +404,12 @@
 }
 .navigation__btn {
     text-align: center;
-    padding: 28px 31px 28px 30.4px;
+}
+.navigation__btn:not(:first-child) {
+    margin-left: 64px;
+}
+.navigation__btn:last-child {
+    margin-right: 32px;
 }
 .navigation__btn a{
     font-family: 'Open Sans';
@@ -420,13 +429,16 @@
     position: relative;
     right: 51.81px;
     top: 0;
-}
 
+}
+.header-left__logo {
+    display: block;
+}
 .banner {
     background: url("../assets/banner.jpg") no-repeat;
     background-size: cover;
     position: relative;
-    padding: 231px 0 185px;
+    padding: 208px 0 185px;
 }
 .banner-backg {
     position: relative;
@@ -580,7 +592,7 @@
 
 .footer {
     background: #000000;
-    padding: 39.43px 0 27px;
+    padding: 35px 0 27px;
     display: flex;
     flex-direction: row;
 }
@@ -606,7 +618,9 @@
 }
 .footer__icons__item {
     text-decoration: none;
-    font-size: 3.325em;
+    height: 53.2px;
+    font-size: 47px;
+    width: 53.2px;
 }
 .footer__icons__item._icon-facebook {
     transition: 0.3s;
@@ -774,3 +788,4 @@
     color: #EC7979;
     border: 1px solid #BDBDBD;
 }
+

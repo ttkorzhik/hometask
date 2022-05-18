@@ -1,0 +1,324 @@
+@media (max-width: 1024px) {
+    .awesome {
+        padding-bottom: 60px;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 46px 0;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .title:after {
+        width: 142px;
+    }
+    .subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 32px;
+    }
+    .cards {
+        padding-top: 65.72px;
+    }
+    .cards__item__pic {
+        margin-bottom: 33.72px;
+        width: 79.55px;
+        height: 79.55px;
+    }
+    .cards__item__pic img {
+        max-width: 72%;
+        max-height: 72%;
+    }
+    .cards__item__title {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 28px 0 29px;
+        margin-bottom: 9px;
+    }
+    .cards__item__content {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+    .tabs {
+        padding-top: 50px;
+    }
+
+    .header-list__item {
+        font-size: 14px;
+        line-height: 19px;
+        padding: 10px 59.5px;
+    }
+
+    .container-block {
+        padding-left: 84.68px;
+    }
+
+    .block-content {
+        margin-right: 26.21px;
+    }
+    .block-img img{
+        width: 398.21px;
+        height: 385px;
+    }
+    .block-content__title {
+        padding: 28px 0;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 38px;
+    }
+    .block-content__descptn {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 38px;
+    }
+    .block-content__btn {
+        font-size: 18px;
+        line-height: 25px;
+        width: 231.87px;
+        padding: 16px 0 17px 0;
+    }
+
+
+    .prices {
+        padding-top: 49.74px;
+    }
+
+    .prices-item__point {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 12px 0 11.34px;
+    }
+    .prices-item__point.prices-item__point--top{
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .prices-item__point.prices-item__point--middle{
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .prices-item__point.prices-item__point--bottom {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .prices-item.prices-item--active {
+        margin-top: -17.74px;
+    }
+
+
+
+    .customers {
+        padding: 50px 0 59px;
+    }
+    .comment {
+        padding-top: 32px;
+    }
+
+    .content__text {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .content__person__foto {
+        margin-right: 22.54px;
+    }
+    .content__person__foto {
+        width: 63px;
+        height: 63px;
+    }
+    .content__person__foto img{
+        width: 63px;
+        height: 63px;
+    }
+
+    .person__info__name {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 6px 0 7px;
+    }
+    .person__info__prof {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 9px;
+    }
+
+    .content__text::after {
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        border-top: 27px solid #E2E2E2;
+    }
+
+    .design__btn {
+        width: 318px;
+        margin: 32px auto 0;
+        padding: 15px 0 14px;
+    }
+
+
+    .header-left {
+        position: static;
+    }
+
+    .banner {
+        padding: 136.98px 0 106px;
+    }
+    .banner-content__logo {
+        Width: 183.1px;
+        Height: 74.85px;
+    }
+    .banner-content__title {
+        font-size: 36px;
+        line-height: 42px;
+        margin: 37.61px 0 31px;
+        padding-bottom: 41.49px;
+        max-width: 454.36px;
+    }
+    .banner-content__title:after{
+        width: 115.28px;
+    }
+    .banner-content__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        max-width: 183.1px;
+    }
+    .banner-content__btn {
+        margin-top: 31.32px;
+        max-width: 183.1px;
+        padding: 10px 0 11px;
+    }
+
+    .banner-form__title {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 32px 50px 33px 50px;
+    }
+    .banner-form__title--color {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .banner-form__btn {
+        width: 398px;
+    }
+    .footer {
+        padding: 35px 0 30px;
+    }
+
+    .footer__icons__item:not(:last-child) {
+        margin-right: 28px;
+    }
+
+    .footer__author {
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 38px;
+    }
+    .footer__icons__item {
+        height: 45px;
+        font-size: 42px;
+        width: 45px;
+    }
+
+
+    .social-container__content {
+        max-width: 402px;
+    }
+    .social-container__content__title {
+        font-size: 18px;
+        line-height: 25px;
+        padding: 12px 0 10px;
+    }
+    .social-container__content__text {
+        font-size: 14px;
+        line-height: 16px;
+        padding-bottom: 13px;
+    }
+
+    .social-container__icons__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .social-container__icons__item svg{
+        width: 64px;
+        height: 64px;
+    }
+    .social-container__icons__item{
+        width: 64px;
+        height: 64px;
+    }
+    .social-container__icons {
+        margin: 26px 0 15px;
+    }
+
+
+    .contact-form-block {
+        padding: 72px 0 50px;
+    }
+
+    .contact-btn {
+        width: 318px;
+    }
+.contact .title {
+    font-weight: 700;
+}
+}
+
+@media (max-width: 1280px) {
+    .header-left {
+        position: static;
+    }
+}
+@media (max-width: 768px) {
+    .awesome {
+        padding: 0 0 60px;
+    }
+    .title {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 50px 0 49px;
+    }
+    .title:after {
+        width: 134px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 25px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 83.72px;
+    }
+    .cards__item {width: 100%;
+
+    }
+    .cards__item:not(:last-child){
+        margin-bottom: 43.72px;
+    }
+    .cards__item__pic {
+        margin-bottom: 33.72px;
+        width: 92px;
+        height: 92px;
+    }
+
+    .cards__item__title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 9px;
+        padding: 29px 0 28px;
+    }
+    .cards__item__content {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 0 8px;
+    }
+    .cards__item__pic img {
+        max-width: 72%;
+        max-height: 72%;
+    }
+
+}
