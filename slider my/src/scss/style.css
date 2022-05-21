@@ -1,0 +1,10 @@
+@import "../../node_modules/swiper/swiper-bundle.css";
+@import "../../node_modules/swiper/swiper.min.css";
+@import "../../node_modules/swiper/modules/pagination/pagination.min.css";
+@import "../../node_modules/swiper/modules/navigation/navigation.min.css";
+@import "../../node_modules/swiper/swiper-bundle.min.css";
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
