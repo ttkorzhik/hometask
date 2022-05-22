@@ -1,0 +1,37 @@
+.futures {
+  background: $green;
+
+  &-block {
+    @include block-space-between;
+  }
+  &__item {
+    width: 19.73%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 0;
+    border-left: 1px solid $white;
+
+    &:last-child {
+      border-right: 1px solid $white;
+    }
+    &__title {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 75px;
+      text-align: center;
+      color: $white;
+      padding-bottom: 19px;
+    }
+    &__text {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28.18px;
+      text-align: center;
+      color: $white;
+    }
+  }}

@@ -1,0 +1,45 @@
+.reviews {
+  @include reviews;
+min-width: 0;
+
+  &-block {
+    @include reviews-block;
+    position: relative;
+
+    &-left {
+      @include reviews-block-left;
+      border: 2px solid $green;
+    }
+
+    &-right {
+      @include reviews-block-right;
+
+      &__text {
+        @include reviews-block-right__text;
+      }
+
+      &__author {
+        @include reviews-block-right__author;
+      }
+
+      &__text:after {
+        @include reviews-block-right__text-after;
+      }
+    }
+  }
+}
+
+.reviews.swiper-button-next:after {
+  color: $grey;
+  font-size: 42px;
+  position: absolute;
+  right: 180px;
+  top: 0;
+}
+.reviews.swiper-button-prev:after {
+  color: $grey;
+  font-size: 42px;
+  position: absolute;
+  left: 183px;
+  top: 0;
+}
