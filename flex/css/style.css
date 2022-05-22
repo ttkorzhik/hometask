@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*overflow-x: hidden;*/
 }
 .wrapper{
     max-width: 1200px;
@@ -30,15 +31,15 @@
     position: relative;
 }
 .title:after {
-    content: "";
+    content: '';
     width: 170px;
     height: 1px;
-    bottom: 0;
-    background: #EC7979;
     position: absolute;
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
+    bottom: 0;
+    background: #EC7979;
 }
 /*.line {*/
 /*    width: 170px;*/
@@ -267,7 +268,7 @@
     align-items: flex-start;
     width: 31.623%;
 }
-.content__text {
+.content__text__paragraph {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -279,6 +280,8 @@
     border-radius: 10px;
     padding: 38px 20px 37px;
     margin-bottom: 66px;
+}
+.content__text {
     position: relative;
 }
 .content__person {
@@ -333,20 +336,24 @@
     border-left: 23px solid transparent;
     border-right: 23px solid transparent;
     border-top: 30px solid #E2E2E2;
-    bottom: -25px;
+    bottom: 37px;
     left: 62px;
 }
 
 .design {
-    background: url("../assets/disign.jpg") no-repeat;
+    background-image: url("../assets/disign.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     padding: 50px 0;
     position: relative;
-    /*height: 100vh;*/
+    width: 100%;
+
 }
 .design-backg {
     position: relative;
     z-index: 2;
+    width: 100%;
 }
 .design:after {
     content: "";
@@ -390,7 +397,8 @@
 }
 
 .top {
-    background: #000000;;
+    background: #000000;
+    width: 100vw;
 }
 .header {
     display: flex;
@@ -435,8 +443,10 @@
     display: block;
 }
 .banner {
-    background: url("../assets/banner.jpg") no-repeat;
+    background-image: url("../assets/banner.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     position: relative;
     padding: 208px 0 185px;
 }
@@ -595,6 +605,7 @@
     padding: 35px 0 27px;
     display: flex;
     flex-direction: row;
+    width: 100vw;
 }
 .footer__icons {
     display: flex;
@@ -670,6 +681,7 @@
 
 .social {
     background: #F8EFEF;
+    width: 100vw;
 }
 .social-container {
     display: flex;
@@ -718,6 +730,7 @@
 
 .contact {
     padding: 50px 0;
+    width: 100vw;
 }
 
 .contact-form-block {
