@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+
+//Для блоков горизантальных
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin column-mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+//Текст
+@mixin title-small {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin text {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+@mixin text-tablet {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin title-tablet {
+  font-size: 18px;
+  line-height: 21px;
+}
+@mixin text-mobile {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;}
+
+
+//Кнопка
+@mixin btn {
+  background: #FF4343;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 24.5px 0 25px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+  width: 370px;
+}
+
+@mixin btn-tablet {
+  background: #FF4343;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 30px 0 29px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.3s;
+  width: 314px;
+}
+
+// Ссылки на соц сети
+@mixin link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.3s;
+  border: 1px solid $light-grey;
+}
+@mixin link-hover {
+  border: 1px solid $light-grey;
+  transform: scale(1.1);
+}
+
+//Для кнопок навигации
+@mixin nav-line {
+  height: 3px;
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -3%;
+  transform: translate(-50%, -50%);
+  background: #BABBC5;
+}

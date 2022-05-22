@@ -1,0 +1,81 @@
+.download {
+  padding: 114px 0;
+  @media (max-width: 1024px) {
+  & {padding: 77.51px 0;}
+}
+  @media (max-width: 768px) {
+    & {padding: 34.51px 0 45px;}
+  }
+
+  &__title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: $extra-black;
+    padding: 17px 0 18px;
+    @media (max-width: 1024px) {
+      & {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 16px 0;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        font-size: 18px;
+        line-height: 21px;
+        padding: 19px 0;}
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $extra-black;
+    margin: 5.29px 0 50.14px;
+    @media (max-width: 1024px) {
+      & {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 4.71px 0 45.71px;
+      }
+    }
+    @media (max-width: 768px) {
+      & {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        padding: 2px 0 1px;
+        margin: 0 0 13.42px;}
+    }
+  }
+
+  &__btn {
+    @include btn;
+    @media (max-width: 1024px) {
+      & {
+        @include btn-tablet;
+      }
+    }
+      @media (max-width: 768px) {
+        & {
+          @include btn-tablet;
+          width: 279px;
+          padding: 28px 0 28.58px;
+        }
+      }
+    &:hover {
+      color: $red;
+      background: $white;
+      border: 1px solid $hover;
+    }
+    }
+  }
